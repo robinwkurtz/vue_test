@@ -24,4 +24,10 @@ yarn run unit
 yarn test
 ```
 
+## Process
+
+- [x] Setup project with [`vue-cli:webpack`](https://github.com/vuejs-templates/webpack)
+- [x] Setup editorconfig
+- [x] Install [`vue-styled-components`](https://github.com/styled-components/vue-styled-components)
+
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
