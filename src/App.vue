@@ -1,22 +1,29 @@
 <template>
-    <div id="app">
-        <router-view/>
-    </div>
+    <wrapper id="app">
+        <styled-header>
+            <nav-list>
+                <li><router-link :to="{ name: 'Survey' }">Survey</router-link></li>
+                <li><router-link :to="{ name: 'Login' }">Login</router-link></li>
+            </nav-list>
+        </styled-header>
+        <styled-body>
+            <router-view/>
+        </styled-body>
+    </wrapper>
 </template>
 
 <script>
+// Styles
+import './styles/global'
+import { Wrapper, NavList, StyledHeader, StyledBody } from './styles/app'
+
 export default {
-    name: 'App'
+    name: 'App',
+    components: {
+        'wrapper': Wrapper,
+        'nav-list': NavList,
+        'styled-body': StyledBody,
+        'styled-header': StyledHeader
+    }
 }
 </script>
-
-<style>
-#app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-}
-</style>

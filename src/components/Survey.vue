@@ -1,17 +1,15 @@
 <template>
     <div class='survey'>
         <h1>{{ msg }}</h1>
-        <styled-title>Subheading</styled-title>
-        <wrapper id="surveyContainer">
+        <survey-container id="surveyContainer">
             <survey :survey='survey'></survey>
-        </wrapper>
+        </survey-container>
     </div>
 </template>
 
 <script>
 // Styles
-import '../styles/global'
-import { Wrapper, StyledTitle } from '../styles'
+import { SurveyContainer } from '../styles/survey'
 
 // Components
 import * as SurveyVue from 'survey-vue'
@@ -21,8 +19,7 @@ var Survey = SurveyVue.Survey
 export default {
     name: 'App',
     components: {
-        'styled-title': StyledTitle,
-        wrapper: Wrapper,
+        'survey-container': SurveyContainer,
         Survey
     },
     data () {
