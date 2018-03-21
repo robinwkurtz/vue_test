@@ -1,6 +1,6 @@
 import styled from 'vue-styled-components'
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.div`
   padding: 4em;
 `
 export const StyledTitle = styled.h1`
