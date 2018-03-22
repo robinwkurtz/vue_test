@@ -20,6 +20,9 @@
 import Vue from 'vue'
 import VueResource from 'vue-resource'
 
+// Constants
+import { CLIENT_KEY } from '../utils/constants'
+
 // Styles
 import {
     List,
@@ -31,7 +34,7 @@ import {
 
 // Request
 Vue.use(VueResource)
-// Vue.http.headers.common['Authorization'] = 'Basic YXBpOnBhc3N3b3Jk';
+Vue.http.headers.common['Authorization'] = `Client-Key ${CLIENT_KEY}`
 
 // Exports
 export default {
