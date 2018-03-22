@@ -32,5 +32,5 @@ export const StyledHeader = styled.header`
 
 export const StyledBody = styled.div`
     position: relative;
-    padding: 60px 0;
+    padding: 60px;
 `

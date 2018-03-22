@@ -3,6 +3,7 @@
         <styled-header>
             <nav-list>
                 <li><router-link :to="{ name: 'Survey' }">Survey</router-link></li>
+                <li><router-link :to="{ name: 'Request' }">Request</router-link></li>
                 <li><router-link :to="{ name: 'Login' }">Login</router-link></li>
             </nav-list>
         </styled-header>

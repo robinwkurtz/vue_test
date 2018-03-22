@@ -1,4 +1,5 @@
 import { injectGlobal } from 'vue-styled-components'
+import colors from './colors'
 
 injectGlobal`
   html, body, div, span, applet, object, iframe,
@@ -43,5 +44,11 @@ injectGlobal`
   table {
     border-collapse: collapse;
     border-spacing: 0;
+  }
+  hr {
+      height: 1px;
+      background-color: ${colors.green4F};
+
+      border: 0 none;
   }
 `
