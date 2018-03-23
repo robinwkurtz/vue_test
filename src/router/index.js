@@ -4,6 +4,7 @@ import Router from 'vue-router'
 // Components
 import Login from '@/components/Login'
 import NotFoundComponent from '@/components/NotFoundComponent'
+import Grid from '@/components/Grid'
 import Request from '@/components/Request'
 import Survey from '@/components/Survey'
 
@@ -26,6 +27,11 @@ export default new Router({
             path: '/request',
             name: 'Request',
             component: Request
+        },
+        {
+            path: '/grid',
+            name: 'Grid',
+            component: Grid
         },
         { path: '*', component: NotFoundComponent }
     ]

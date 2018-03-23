@@ -1,6 +1,13 @@
 import styled from 'vue-styled-components'
 import colors from './colors'
 
+export const Divider = styled.div`
+    width: 1px;
+    height: 20px;
+
+    background-color: ${colors.blue2C};
+`
+
 export const Wrapper = styled.div`
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -13,6 +20,8 @@ export const NavList = styled.ul`
     > li {
         display: inline-block;
         margin: 0 6px;
+
+        vertical-align: middle;
         > a {
             color: ${colors.white};
             font-weight: bold;

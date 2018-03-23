@@ -4,6 +4,8 @@
             <nav-list>
                 <li><router-link :to="{ name: 'Survey' }">Survey</router-link></li>
                 <li><router-link :to="{ name: 'Request' }">Request</router-link></li>
+                <li><router-link :to="{ name: 'Grid' }">Grid</router-link></li>
+                <li><divider /></li>
                 <li><router-link :to="{ name: 'Login' }">Login</router-link></li>
             </nav-list>
         </styled-header>
@@ -16,15 +18,16 @@
 <script>
 // Styles
 import './styles/global'
-import { Wrapper, NavList, StyledHeader, StyledBody } from './styles/app'
+import { Divider, NavList, StyledHeader, StyledBody, Wrapper } from './styles/app'
 
 export default {
     name: 'App',
     components: {
-        'wrapper': Wrapper,
+        'divider': Divider,
         'nav-list': NavList,
         'styled-body': StyledBody,
-        'styled-header': StyledHeader
+        'styled-header': StyledHeader,
+        'wrapper': Wrapper
     }
 }
 </script>
