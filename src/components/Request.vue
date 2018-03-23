@@ -2,7 +2,7 @@
     <div class="request">
         <list>
             <list-item v-for="(post, index) in posts" v-bind:key="post.id">
-                <number>{{index}}</number>
+                <number>{{index + 1}}</number>
                 <list-body>
                     <list-title>{{post.title}}</list-title>
                     <p>{{post.body}}</p>
